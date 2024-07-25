@@ -30,7 +30,7 @@ app.use(express.static(__dirname + "/templates"));
 import { router as r_device } from "./src/routers/r_device.js";
 app.use("/", r_device);
 
-app.get("/", (req, res) => {
+app.get("/login", (req, res) => {
   res.render("login.ejs");
 });
 

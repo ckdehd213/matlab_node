@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,4 +8,48 @@
 <body>
     <h1>hi</h1>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include("basehead.ejs") %>
+    <script src="/static/js/UnityProgress.js"></script>
+    <script src="/Build1/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build1/Webgl_1.json", {onProgress: UnityProgress});
+    </script>
+</head>
+
+<body style="overflow-y: auto; overflow-x: hidden;">
+    <%- include("basenav.ejs") %>
+
+    <section id="section3">
+      <div class="position-relative w-100">
+        <div class="d-flex bd-highlight align-middle justify-content-center p-3">
+          <div id="unityContainer" style="width:100%; height: 800px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section4">
+      <div class="position-relative w-100">
+        <div class="text-center justify-content-center p-3">
+          <h6 class="fw-bold">LH2 연료계통</h6>
+          <img class="main_img" src="/static/img/img1.png">
+          <h6 class="fw-bold">하이브리드 연료전지 계통</h6>
+          <img class="main_img" src="/static/img/img2.png">
+          <h6 class="fw-bold">선박 추진계통</h6>
+          <img class="main_img" src="/static/img/img3.png">
+          <h6 class="fw-bold">Carbon Emissions Trend</h6>
+          <img class="main_img" src="/static/img/img4.png">
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+    </footer>
+
 </html>
