@@ -1,5 +1,5 @@
 import bodyParser from "body-parser";
-// import cookieParser from "cookie-parser";
+import cookieParser from "cookie-parser";
 import "dotenv/config";
 import express from "express";
 import path from "path";
