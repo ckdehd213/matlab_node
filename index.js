@@ -30,7 +30,7 @@ app.use(express.static(__dirname + "/templates"));
 import { router as r_device } from "./src/routers/r_device.js";
 app.use("/", r_device);
 
-app.get("/login", (req, res) => {
+app.get("/", (req, res) => {
   res.render("login.ejs");
 });
 
@@ -38,6 +38,11 @@ app.get("/login", (req, res) => {
 app.get("/main", (req, res) => {
     res.render("main.ejs");
   });
+
+//* 데이터 표출
+app.get("/showdata", (req, res) => {
+  res.render("showdata.ejs");
+});  
 
   app.listen(httpport, () => {
     console.log(`web on port ${httpport}...`);

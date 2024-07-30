@@ -19,7 +19,6 @@
     "mat-for-js": "^1.1.0",
     "matlab": "^1.0.0",
     "mysql2": "^3.10.3",
-    "node-matlab": "^1.3.0",
-    "nodemon": "^3.1.4"
+    "node-matlab": "^1.3.0"
   }
 }

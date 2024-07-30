@@ -26,6 +26,8 @@
 //     console.log('데이터베이스에 연결되었습니다.');
 // });
 
+
+
 // fs.readFile("C:\\Users\\jne32\\Desktop\\KETI_simulation\\matlab00.mat", null, (err, data) => {
 //     if (err) {
 //         console.error("파일 읽기 오류:", err);

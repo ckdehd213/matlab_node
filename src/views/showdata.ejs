@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include("basehead.ejs") %>
+</head>
+
+<body style="overflow-y: auto; overflow-x: hidden;">
+    <%- include("basenav.ejs") %>
+
+    <section id="section2">
+      <div class="wrap">
+        <div class="gap">
+
+          <!-- table -->
+          <div class="w-100 justify-content-center">
+            <div class="w-100 mt-1">
+              <div class="col text-center col-auto">
+                <h6 class="fw-bold p-1"></h6>
+                <div id="t" class="table-responsive" style="margin: 0 10px; height: 361px; overflow-y: auto;">
+                  <div class="graph_wrap"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>  
+      </div>    
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        await getdata();      
+      });
+    </script>
+</body>
+</html>
